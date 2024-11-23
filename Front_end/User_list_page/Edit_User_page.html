@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing Page</title>
+    <link rel="stylesheet" href="Edit_User_page.css">
+    <script src="Edit_User_page.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="user-list-title"></h1>
+        <!-- <button type="submit" class="save-changes-button" onclick="updateUser(event) ">Save Changes</button> -->
+            <button type="submit" class="save-user-button" onclick="updateUser(event) ">Save User</button>
+            <button type="submit" class="save-game-button" onclick="updateGame(event) ">Resubmit</button>
+            <button type="submit" class="upload-game-button" onclick="uploadGame(event) ">Upload Game</button>
+            <button type="submit" class="save-dev-button" onclick="updateDev(event) ">Save Developer</button>
+
+    </div>
+
+    <div class="container">
+        <!-- <form id="edit-user-form">
+            <label for="user-id">ID:</label>
+            <input type="text" id="user-id" name="user-id" disabled><br><br>
+
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" name="user-name"><br><br>
+
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" name="user-email"><br><br>
+        </form> -->
+    </div>
+    
+</body>
+</html>

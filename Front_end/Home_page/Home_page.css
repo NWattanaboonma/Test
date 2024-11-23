@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Section */
+body {
+    background-color: #f9f9f9;
+}
+
+/*---------------------------Start NAV Bar---------------------------*/
+header {
+    background-color: #301515; /* Darker shade for the nav bar */
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.icon_nav_left {
+    display: flex;
+    align-items: center;
+}
+
+.icon_nav_left a,
+.icon_nav_right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.icon_nav_left a:hover,
+.icon_nav_right a:hover {
+    color: #ffcc00;
+}
+
+.icon_nav_left p {
+    font-family: 'Inika', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 20px;
+    color: #ffcc00;
+}
+
+.icon_nav_right {
+    display: flex;
+    align-items: center;
+}
+
+.icon_nav_right img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon_nav_right img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive font size for nav */
+@media (min-width: 768px) {
+    nav {
+        font-size: 18px;
+    }
+}
+
+.icon_nav_left a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #b8b4b4;
+}
+
+/* Right-aligned button styles */
+.icon_nav_right {
+    display: flex;
+    align-items: center;
+}
+
+.cart-button {
+    background-color: #099441;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Shift button to the left */
+}
+
+.cart-button:hover {
+    background-color: rgb(12, 192, 12);
+}
+
+/*---------------------------Start Body Section---------------------------*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 20px;
+    gap: 20px;
+}
+
+h2.op_head {
+    font-size: 3rem;
+    color: #301515;
+    margin-bottom: 40px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* ------------------------ Coming Soon Section ------------------------*/
+.comming-soon {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(163, 157, 157);
+    margin-top: 50px;
+    font-style: italic;
+}
+
+/* ------------------------ Product List Styles ------------------------ */
+.product-container {
+    display: flex;
+    justify-content: center; /* Align products horizontally */
+    flex-wrap: wrap; /* Allow wrapping if there are many products */
+    gap: 20px; /* Space between product items */
+    overflow-x: auto; /* Allows horizontal scrolling for products */
+    width: 100%;
+}
+
+.box {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px; /* Space between product blocks */
+    width: 100%;
+    max-width: 900px; /* Limit width of product card */
+}
+
+#number {
+    flex: 0 0 250px; /* Fixed width for image */
+    margin-right: 20px; /* Space between image and details */
+}
+
+.product-image {
+    width: 100%; /* Full width of image container */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Make sure the image covers the container */
+}
+
+.product-info {
+    flex: 1; /* Take the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.product-details {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+}
+
+/* Name and Description Styling */
+.name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #301515;
+}
+
+.description {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Price and Specification */
+.price {
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Genre and Features */
+.genre, .feature, .devName, .patch, .package, .rate {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Rating and Review */
+.rate {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.feature, .devName, .patch, .package {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Optional: Add hover effect for box */
+.box:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+

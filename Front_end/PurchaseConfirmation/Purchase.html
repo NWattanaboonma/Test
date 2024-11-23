@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purchase Game</title>
+<link rel="stylesheet" href="Purchase.css">
+<link rel="stylesheet" href="confirmSuccess.html">
+
+
+</head>
+<body>
+    <div class="purchase-container">
+        <h1>Complete Your Purchase</h1>
+        
+        <div class="game-details">
+            <h2>Game: <span id="gameName">The Legend of Zelda: Breath of the Wild</span></h2>
+            <p>Price: <span id="gamePrice">1290 THB</span></p>
+        </div>
+
+        <div class="payment-selection">
+            <h3>Select Payment Card</h3>
+            <select id="cardSelection">
+                <option value="" disabled selected>Select your card</option>
+                <option value="card1">Visa **** **** **** 1234</option>
+            </select>
+        </div>
+
+        <button class="purchase-button" onclick="processPurchase()">Confirm Purchase</button>
+        <div id="confirmationMessage" class="confirmation-message"></div>
+    </div>
+    <script src="Purchase.js"></script>
+</body>
+</html>

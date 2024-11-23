@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="BuyProductPage.css">
+</head>
+<body>
+    <div class="product-container">
+        <input type="text" id="searchInput" placeholder="Search by ID or Name">
+        <button id="searchButton">Search</button>
+
+        <h2 id="productName">Product Name</h2>
+        <p id="productDescription">Description</p>
+        <p><strong>Price:</strong> $<span id="productPrice">0.00</span></p>
+        <p><strong>Total Price:</strong> $<span id="totalPrice">0.00</span></p>
+        <p><strong>Available Quantity:</strong> <span id="productQuantityDisplay">0</span></p>
+
+        <div class="quantity-container">
+            <label for="productQuantity">Quantity:</label>
+            <input type="number" id="productQuantity" value="1" min="1">
+        </div>
+        <button id="buyNowButton">Buy Now</button>
+    </div>
+    <script src="BuyProductPage.js"></script>
+</body>
+</html>

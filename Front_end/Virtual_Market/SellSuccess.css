@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.confirmation-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.transaction-summary {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.transaction-summary p {
+    margin: 10px 0;
+}
+
+.transaction-summary .label {
+    font-weight: bold;
+}
+
+.transaction-summary .value {
+    color: #555;
+}
+
+#success {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#success:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#success:active {
+    background-color: #388e3c;
+    transform: translateY(0); /* Reset the transform when button is clicked */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+}
+
+.footer a {
+    color: #4caf50;
+    text-decoration: none;
+}

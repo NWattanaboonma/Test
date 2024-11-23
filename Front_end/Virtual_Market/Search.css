@@ -1,0 +1,117 @@
+.AdvanceSearch {
+    width: 1400px;
+    height: 690px;
+    display: flex;
+}
+
+.bar {
+    height: 50px;
+}
+.half{
+    width: 700px; 
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start ;
+}
+
+.Product{
+    margin-top: 3rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    /* flex-flow: column; */
+
+}
+
+
+.AdvanceSearch label {
+    padding: 2%;
+    padding-left: 0%;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.AdvanceSearch input[type = "text"],
+.AdvanceSearch select {
+    width: calc(700px - 120px); 
+    height: 40px;
+    font-size: 16px;
+    padding: 7px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+
+.info{
+    height: 156px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}   
+.imgproducts{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+.button-35 {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-35:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  }
+
+  /* .AdvanceSearch button {
+    padding: 13px;
+    background-color: #454444;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+} */
+/* .info button{
+    margin: 0;
+    padding: 10px 20px;
+} */
+

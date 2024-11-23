@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Section */
+body {
+    background-color: #f9f9f9;
+}
+
+/*---------------------------Start NAV Bar---------------------------*/
+header {
+    background-color: #301515; /* Darker shade for the nav bar */
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.icon_nav_left {
+    display: flex;
+    align-items: center;
+}
+
+.icon_nav_left a,
+.icon_nav_right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.icon_nav_left a:hover,
+.icon_nav_right a:hover {
+    color: #ffcc00;
+}
+
+.icon_nav_left p {
+    font-family: 'Inika', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 20px;
+    color: #ffcc00;
+}
+
+.icon_nav_right {
+    display: flex;
+    align-items: center;
+}
+
+.icon_nav_right img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon_nav_right img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive font size for nav */
+@media (min-width: 768px) {
+    nav {
+        font-size: 18px;
+    }
+}
+
+/*---------------------------Start Body Section---------------------------*/
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 85px; /*Make a space between nav and product detail*/
+}
+
+.left_column {
+    flex: 1; /* Allow the column to grow and shrink */
+    max-width: 400x;/* Left column sizee */
+    margin-left: 20px;
+    margin-right: 5px; /* Add a fixed margin between the columns */
+    border-radius: none;
+    color: black;
+    background-color: #ffffff;
+}
+
+.right_column {
+    flex: 1; /* Allow the column to grow and shrink */
+    max-width: 500px;/* right column sizee */
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 5px;
+    color: black;
+    background-color: #ffffff;
+}
+
+/*@media screen and (min-width: 768px) {
+    .container {
+        justify-content: center; 
+    }
+
+    .left_column,
+    .right_column {
+        flex-basis: 45%; 
+    }
+
+    .left_column {
+        margin-right: 30px; 
+    }
+
+}*/
+
+
+/*-------------------Left column-------------------*/
+
+
+.left_column {/*Picture column*/
+    max-width: 700px; /* Adjust as needed */
+    margin: auto; /* Center the container */
+    border-radius: none;
+    color: black;
+    background-color: #ffffff;
+    margin-top: 25px;
+}
+
+.main_product {
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.addition {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap; 
+}
+
+.sub_product {
+    width: 80px; 
+    margin: 5px; 
+    max-width: 100%; 
+}
+
+
+/*-------------------right column-------------------*/
+
+
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black !important; /*To make sure font is black, and emphasis that this is*/
+}
+
+.p_left-price, .Materials-color {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.color{
+    display: flex;
+    align-items: center;
+}
+
+.color p {
+    margin-right: 5px; /* Add a small space between the color text and span */
+}
+
+/* .color span {
+    color: pink;
+} */
+
+.Materials{
+    display: inline-table;
+}
+
+.detail {
+    font-size: small;
+}
+
+.p_left {
+    color:red;
+}
+
+.quantity-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity button {
+    font-size: 16px;
+    padding: 6px 8px;
+    border: 0px solid black;
+    border-radius: 0;
+    background-color: #b1afaf;
+    color: black;
+}
+
+.qty_numbers{
+    padding: 6px 30px;
+    width: 65px;
+    background-color: #ffffff !important;
+}
+
+.quantity button:hover {
+    background-color: #f0f0f0;
+}
+
+.cart button {/* purchase button*/
+    padding: 13px 30px;
+    border: none; 
+    border-radius: 5px;
+    background-color: #301515;
+    color: white;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: #797979; 
+    border-radius: 5px;
+    box-shadow: 0 0 3px 3px rgba(97, 97, 97, 0.5); /*when cursor touch button the button glow*/
+}
+/*-------------------Description-------------------*/
+.description-container {/*Description box*/
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+    padding: 0 15px;
+}
+
+.Description {
+    padding: 20px;
+    text-align: justify;
+    max-width: 100%;/*Ensure that description box will not go be with left and right column*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Description h3 {
+    font-weight: bold;
+    border-bottom: 1px solid #301515; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+    margin-top: 30px;
+}
+
+
+.button-container {
+    width:100%;
+    text-align: left; /* Align the button to the right within the footer */
+    margin-top: 25px; /* Adjust margin as needed */
+    margin-left: 5%;
+}
+
+.back {
+    padding: 8px 23px;
+    font-size: 16px;
+    background-color: rgb(189, 189, 189); 
+    color: rgb(49, 49, 49); 
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.back:hover {
+    background-color: #6d6d6d; 
+    box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.5); /*when cursor touch button the button glow*/
+}
+
+/* .back {
+    padding: 8px 23px;
+    font-size: 16px;
+    background-color: rgb(189, 189, 189); 
+    color: rgb(49, 49, 49); 
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed 
+    left: 20px; /* Align to the left side of the screen 
+} */
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px; /* Ensure space between buttons and input */
+    margin: 20px 0; /* Adjust spacing as needed */
+}
+
+.qty_button {
+    font-size: 18px; /* Reduced font size for better fit */
+    padding: 8px;
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    background-color: #301515; /* Button color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%; /* Make buttons circular */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.qty_button:hover {
+    background-color: #ffcc00; /* Highlight color on hover */
+}
+
+.qty_numbers {
+    font-size: 20px;
+    padding: 0 15px;
+    width: 60px; /* Adjust the width for better visibility */
+    text-align: center;
+    background-color: #f9f9f9; /* Soft background */
+    border: 2px solid #b1afaf; /* Border to define the input box */
+    border-radius: 5px;
+}
+
+/* Improve the appearance of the input box */
+.qty_numbers:focus {
+    outline: none;
+    border-color: #301515; /* Border color when focused */
+}
+
+/* Modify button layout and spacing when on mobile devices */
+@media (max-width: 768px) {
+    .quantity {
+        width: 100%; /* Full width on small screens */
+        justify-content: space-between;
+    }
+
+    .qty_numbers {
+        width: 50px; /* Adjust the width of input field for mobile */
+    }
+
+    .qty_button {
+        font-size: 16px; /* Smaller buttons on mobile */
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.cart-button {
+    background-color: #099441;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Shift button to the left */
+}
+
+.cart-button:hover {
+    background-color: rgb(12, 192, 12);
+}
+
+
+/* ================= Ching Editing =============== */
+.left_column .main_product {
+    width:80%;
+    margin-left: 10%;
+}
+
+.right_column ,.title, .description-container{
+    font-family: "Imprima", Serif;
+}
+
+.title {
+    font-size: 35px;
+}

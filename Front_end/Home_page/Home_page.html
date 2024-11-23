@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Home_page.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet" ><!--download font Inika-->
+    <link href="https://fonts.cdnfonts.com/css/inspiration" rel="stylesheet"><!--download font inspiration-->
+</head>
+<body>
+    
+    <!--Start Nav Bar-->
+
+    <header>
+        <nav class="navigator"><!--download icon-->
+            
+            <div class="icon_nav_left"><!--Crate column for Left side text-->
+                <p class="Mutelu" style="font-family:'inspiration';"> LightWeight </p>
+                <a href="/Home">Home</a> <!--Navigate to home page-->
+                <a href="/Home/Inventory">Inventory</a> <!--Navigate to product Page page-->
+                <a href="/Virtual_market">Virtual Market</a> <!--Navigate to About Us page-->
+
+            </div>
+
+            <div class="icon_nav_right">
+                <button class="cart-button" onclick="window.location.href='/Home/Cart';">
+                    Cart
+                </button>
+            </div>
+            
+            
+            <!-- <div class="icon_nav_right">
+                <a href="../Advanced_search/advanced-search.html"><img src="images/WH_search.png" alt="icon"></a> 
+                <a href="#"><img src="images/WH_cart.png" alt="icon"></a> 
+                            
+            </div> -->
+            
+        </nav>
+        
+    </header>
+
+    <!--End Nav Bar-->
+
+    <!--Start Detail body}-->
+
+    <!--Product picture-->
+    <main class="container"> <!--To make picture, product detail and description in one group--> 
+        <div class = "left_column">
+            <h2 class="op_head">Game Releases</h2>
+        </div>
+
+    </main>
+    <div class="comming-soon"></div>
+    <div class="product-container">
+        <div class="productLists" id='list' ></div>
+        <script src="Home_page.js">
+        </script>
+
+    </div>
+
+    <!--End Detail body-->
+</body>
+</html>
