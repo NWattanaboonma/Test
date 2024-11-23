@@ -10,11 +10,11 @@ const app = express();
 const PORT = 3125;  
 
 app.use(cors({
-  origin: 'http://localhost:5000'
+  origin: 'http://18.206.216.151:5000'
 }));
 
 const client = new Client({
-  node: 'https://localhost:9200',
+  node: 'https://18.206.216.151:9200',
   auth: {
     username: 'elastic',
     password: 'YLroqaqGQMt3C6cFTnUA'
