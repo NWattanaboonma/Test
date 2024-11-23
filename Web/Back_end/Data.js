@@ -14,7 +14,7 @@ app.use(cors({
 }));
 
 const client = new Client({
-  node: 'https://18.206.216.151:9200',
+  node: 'https://vpc-test1-tiqhmw2hd4jqoloqhsi7cw5hqe.us-east-1.es.amazonaws.com',
   auth: {
     username: 'elastic',
     password: 'YLroqaqGQMt3C6cFTnUA'
